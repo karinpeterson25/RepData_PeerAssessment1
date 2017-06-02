@@ -7,7 +7,7 @@ The following documents the steps taken to complete Course Project 1 of Reproduc
 
 
 ```{r}
-data <- read.csv("activity.csv")
+data <- read.csv(unz("activity.zip", "activity.csv"))
 data$date <- as.Date(data$date)
 
 str(data)
